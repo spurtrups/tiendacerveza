@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerveza Byggvir - Tienda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cerveza Byggvir</h1>
+        <nav>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <main id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="producto">
+            <h3>Cerveza Artesanal</h3>
+            <p>$2.000 CLP</p>
+            <button onclick="agregarAlCarrito('Cerveza Artesanal', 2000)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <h3>Pack Especial</h3>
+            <p>$10.000 CLP</p>
+            <button onclick="agregarAlCarrito('Pack Especial', 10000)">Añadir al carrito</button>
+        </div>
+    </main>
+    <aside id="carrito">
+        <h2>Carrito de compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total">0</span> CLP</p>
+        <button onclick="finalizarCompra()">Finalizar compra</button>
+    </aside>
+    <footer id="contacto">
+        <p>Contacto: info@byggvir.cl</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
